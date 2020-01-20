@@ -1,0 +1,19 @@
+{
+  "name": "resource-monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuneJobs/resource-monitor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuneJobs/resource-monitor/issues"
+  },
+  "homepage": "https://github.com/JuneJobs/resource-monitor#readme"
+}
