@@ -14,9 +14,12 @@ let get_process_resource = () => {
         heapTotal = bit_to_megabyte(measured_process_resource.heapTotal), 
         heapUsed = bit_to_megabyte(measured_process_resource.heapUsed);
     return {
-        rss: rss,
-        heapTotal: heapTotal,
-        heapUsed: heapUsed
+        cpu_usage: "",
+        mem_usage: {
+            rss: rss,
+            heapTotal: heapTotal,
+            heapUsed: heapUsed
+        }
     };
         
 };
@@ -24,10 +27,10 @@ let get_process_resource = () => {
 let get_server_resource = async () => {
     let cpu_usage = await cpu.usage(),
         mem_usage = await mem.info();
-        return {
-            cpu_usage: cpu_usage, 
-            mem_usage: mem_usage
-        };
+    return {
+        cpu_usage: cpu_usage, 
+        mem_usage: mem_usage
+    };
 };
 
 let monitor = async () => {
