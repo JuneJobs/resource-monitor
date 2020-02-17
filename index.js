@@ -43,6 +43,8 @@ let monitor = async () => {
     system_resource_result = JSON.stringify(system_resource_result);
     console.log(`process resource usage: \n${process_resource_result}`);
     console.log(`pserver resource usage: \n ${system_resource_result}`);
+    var os = require('os');
+    var loads = os.loadavg();
 }
 
 setInterval(monitor, 1000);
