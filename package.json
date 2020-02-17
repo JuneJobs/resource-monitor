@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/JuneJobs/resource-monitor#readme",
   "dependencies": {
-    "node-os-utils": "^1.2.2"
+    "node-os-utils": "^1.2.2",
+    "pidusage": "^2.0.17"
   }
 }
